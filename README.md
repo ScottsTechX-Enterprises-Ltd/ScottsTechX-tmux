@@ -17,7 +17,7 @@ tmux lets you split terminals into multiple panes, windows, and sessions — run
 
 ```bash
 # Start new session
-tmux new -s pentest
+tmux new -s dev
 
 # Split horizontal
 Ctrl+b "
@@ -32,26 +32,26 @@ Ctrl+b arrow-keys
 Ctrl+b d
 
 # Reattach session
-tmux attach -t pentest
+tmux attach -t dev
 
 # List sessions
 tmux ls
 ```
 
-## 🎯 CTF Workflow
+## 🎯 Development Workflow
 
 ```bash
 # Create session with windows
-tmux new -s ctf
-# Window 1: recon
-# Window 2: exploitation
-# Window 3: notes
+tmux new -s project
+# Window 1: server
+# Window 2: editor
+# Window 3: logs
 
 # Detach when done
 Ctrl+b d
 
 # Resume later
-tmux attach -t ctf
+tmux attach -t project
 ```
 
 ---
